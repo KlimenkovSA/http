@@ -1,4 +1,4 @@
-package ru.fisunov.http.server;
+package ru.klem.http.server;
 
 import java.util.Collections;
 import java.util.HashMap;
@@ -46,10 +46,8 @@ public class Request {
         return out;
     }
 
-    public void show() {
-        System.out.println("Запрос:");
-        System.out.println("uri: " + uri);
-        System.out.println("params: " + params);
+    public String show() {
+        return "uri: " + uri + "  params: " + params;
     }
 
     public String getParam(String key) {
